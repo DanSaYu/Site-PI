@@ -1,0 +1,17 @@
+h6{
+    color: rgb(131, 131, 131);
+}
+
+.produto{
+    display: flex;
+}
+
+.precos {
+    margin-top: 20px;
+}
+
+.carrinho-btn{
+    background-color: brown;
+    color: white;
+    padding: 12px 16px;
+}

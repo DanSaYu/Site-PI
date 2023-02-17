@@ -2,27 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta ch    rset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/colors.css">
+    <title>Site Odonto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <ul class="header-ul">
-                <a href="#"><img src="img/icons8-dente-64.png" alt="logo-odonto" id="logo-odonto"></a>
-                <div class="pesquisar">
-                    <form>
-                        <input type="text" placeholder="Pesquise Aqui..." name="pesquisa" id="pesquisa">
-                        <img src="img/icons8-pesquisar-50.png" alt="lupa-pesquisar" class="img">
-                    </form>
+    <!-- Início Header -->
+    <header>
+        <nav class="header-cima container">
+            <ul>
+                <img src="img/icons8-dente-64.png" alt="logo">
+                <form action="">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquise aqui um produto....">
+                    <img src="img/icons8-pesquisar-50.png" alt="lupa" id="lupa">
+                </form>
+                <div class="botoes-cima">
+                    <img src="/img/icons8-carrinho-de-compras-48.png" alt="carrinho">
                 </div>
                 <div class="botoes-direita">
                     <a href="#"><img src="img/icons8-categoria-50.png" alt="categorias" id="categorias" class="img-direita"></a>
@@ -38,79 +39,134 @@
                 <li><a href="#">Exemplo</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="container">
-        <div class="carrousel">
-        <a class="arrow left" id="arrow-left"><img src="img/icons8-login-arredondado-100.png" alt="Seta-Esquerda" class="img-seta" id="seta-esquerda"></a>
-        <div class="gallery-wrapper">
-            <div class="gallery" id="gallery">
-                <img src="img/image 1.png" alt="propaganda" class="propaganda">
-                <img src="img/image 1.png" alt="propaganda" class="propaganda">
-                <img src="img/image 1.png" alt="propaganda" class="propaganda">
-                <img src="img/image 1.png" alt="propaganda" class="propaganda">
-                <img src="img/image 1.png" alt="propaganda" class="propaganda">
-            </div>
-        </div>
-        <a class="arrow right" id="arrow-right"><img src="img/icons8-login-arredondado-à-direita-100.png" alt="Seta-Direita" class="img-seta" id="seta-direita"></a>
-        </div>
-        <div class="spans">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="container-principal">
-            <div class="container-item"></div>
-            <div class="container-item"></div>
-            <div class="container-item" id="area-grande-grid"></div>
-        </div>
-        <h1>Produtos em Destaque</h1>
-        <div class="produtos-destaque">
-            <button class="botoes-produtos"><<</button>
-            <div class="produtos-item">
-                <div class="produto-item-imagem"><img src="img/coca-cola.png" alt="coca-cola" class="coca-cola"></div>
-                <p><stron>Nome do Produto</stron></p>
-                <p>R$100,00</p>
-            </div>
-            <div class="produtos-item">
-                <div class="produto-item-imagem"><img src="img/coca-cola.png" alt="coca-cola" class="coca-cola"></div>
-                <p><strong>Nome do Produto</strong></p>
-                <p>R$100,00</p>
-            </div>
-            <div class="produtos-item">
-                <div class="produto-item-imagem"><img src="img/coca-cola.png" alt="coca-cola" class="coca-cola"></div>
-                <p><strong>Nome do Produto</strong></p>
-                <p>R$100,00</p>
-            </div>
-            <button class="botoes-produtos">>></button>
-        </div>
-    </main>
-    <footer class="container">
-        <div class="parte-de-cima">
-            <img src="img/icons8-whatsapp-50 1.png" alt="whastsapp">
-            <div class="paragrafo">
-                <p>Nome da Loja</p>
-                <p>CNPJ: 00.000.00/0000-0</p>
-                <p>Endereço</p>
-                <p id="copyright">Todos o Direitos reservados para @ 2023</p>
-            </div>
-            <div class="redes-sociais">
-                <p>Redes Sociais</p>
-                <div class="fotos-direita">
-                    <a href="#"><img src="img/icons8-facebook-50 1.png" alt="facebook"></a>
-                    <a href="#"><img src="img/icons8-instagram-50 1.png" alt="instagram"></a>
+        <div class="header-baixo-bg">
+            <div class="header-baixo container">
+                <div class="header-baixo-conteudo">
+                    <div class="design-barras-categorias">
+                        <span class="barras-brancas"></span>
+                        <span class="barras-brancas"></span>
+                        <span class="barras-brancas"></span>
+                    </div>
+                    <div class="text-categorias">
+                        <p>Todas as Categorias</p>
+                    </div>
+                </div>
+                <div class="header-baixo-botoes container">
+                    <ul class="header-botoes">
+                        <li class="header-botoes-li">Equipamentos</li>
+                        <hr>
+                        <li class="header-botoes-li">Descartáveis</li>
+                        <hr>
+                        <li class="header-botoes-li">Instrumentos Odontológicos</li>
+                        <hr>
+                        <li class="header-botoes-li" id="melhores">Melhores Ofertas</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="parte-de-baixo">
-            <div class="email">
-                <a href=""><img src="img/icons8-mail-50 1.png" alt="email"></a>
-                <p>Exemplo@exemplo.com.br</p>
+    </header>
+    <!-- Fim Header -->
+    <main class="container">
+        <div class="carrousel-container container">
+            <div class="carrousel-display">
+                <img src="img/Carrossel-Exemplo.png" alt="promocao">
+            </div>
+            <div class="carrousel-botoes">
+                <span class="spans-carrousel"></span>
+                <span class="spans-carrousel"></span>
+                <span class="spans-carrousel"></span>
+                <span class="spans-carrousel"></span>
+                <span class="spans-carrousel"></span>
+                <span class="spans-carrousel"></span>
             </div>
         </div>
-    </footer>
-    <script src="index.js"></script>
-</body>
+        <div class="ofertas container">
+            <div class="nossas-ofertas container">
+                <span></span>
+                <h1>Nossas Ofertas</h1>
+                <span></span>
+            </div>
+            <div class="container-ofertas container">
+                <ul>
+                    <span class="setas"><<</span>
+                    <l1 class="container-ofertas-li">
+                        <div class="imagem-ofertas-li">
+                            <img src="img/Captura_de_tela_2023-02-16_151632-removebg-preview 1 (1).png" alt="produto">
+                        </div>
+                        <p class="preco-ofertas">de R$20,00 por</p>
+                        <p class="preco-principal-ofertas">R$10,00</p>
+                        <span class="adicionar-carrinho">Adicionar</span>
+                        <span class="desconto">50% Off</span>
+                    </l1>
+                    <l1 class="container-ofertas-li">
+                        <div class="imagem-ofertas-li">
+                            <img src="img/Captura_de_tela_2023-02-16_151632-removebg-preview 1 (1).png" alt="produto">
+                        </div>
+                        <p class="preco-ofertas">de R$20,00 por</p>
+                        <p class="preco-principal-ofertas">R$10,00</p>
+                        <span class="adicionar-carrinho">Adicionar</span>
+                        <span class="desconto">50% Off</span>
+                    </l1>
+                    <l1 class="container-ofertas-li">
+                        <div class="imagem-ofertas-li">
+                            <img src="img/Captura_de_tela_2023-02-16_151632-removebg-preview 1 (1).png" alt="produto">
+                        </div>
+                        <p class="preco-ofertas">de R$20,00 por</p>
+                        <p class="preco-principal-ofertas">R$10,00</p>
+                        <span class="adicionar-carrinho">Adicionar</span>
+                        <span class="desconto">50% Off</span>
+                    </l1>
+                    <span class="setas">>></span>
+                </ul>
+            </div>
+        </div>
+        <div class="amostra">
+            <div class="amostra1"><img src="img/amostra1.jpg" alt=""></div>
+            <div class="amostra2"><img src="img/amostra2.jpg" alt=""></div>
+            <div class="amostra3"><img src="img/amostra3.jpg" alt=""></div>
+        </div>
+    </main>
 
+    <!-- Início Footer -->
+    <footer>
+        <div class="container footer-conteudo">
+
+            <ul class="lista-contato">
+                <li>
+                   <img src="img/watsapp.png">
+                    <span>
+                        +55 99999999999
+                    </span>
+                </li>
+                <li>
+                        <img src="img/gmail.png">
+                    <span>
+                        email@.com
+                    </span>
+                </li>
+            </ul>
+
+            <div class="lista-redes">
+                <span>Redes Sociais</span>
+                <ul class="lista-redes-sociais">
+                    <li>
+                        <img src="img/facebook.png">
+                    </li>
+                    <li>
+                        <img src="img/instagram.png">
+                    </li>
+
+                </ul>
+            
+            </div>
+        </div>
+
+        <div class="footer-baixo">
+            Nome da loja 2023
+        </div> 
+    </footer>
+    <!-- Fim do Footer -->
+
+</body>
 
 </html>
